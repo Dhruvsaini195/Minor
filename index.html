@@ -8,13 +8,13 @@
 <script src="script.js"></script>
 <body>
     <div class="head">
-        <h4 style="text-align: center; background-color:blue ;">
+        <h4 style="background-color:rgb(74, 148, 233) ;">
             <label  id="logo">FlyFest</label>
             <button class="btn btn1">Home</button>
             <button class="btn btn2">Events</button>
             <button class="btn btn3">Flights</button>
             <button class="btn btn4">About Us</button>
-            <button class="btn btn5">Login</button>
+            <button style="float: right;" class="btn btn5">Login/Register</button>
         </h4>
     </div>
     <br>
@@ -51,67 +51,35 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-lg-3 align-items-start flex-column">
-                            <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel"> 12+
-                                </span></label>
-                            <select class="form-select" id="adults"
-                                onchange="javascript: dynamicDropDown(this.options[this.selectedIndex].value);">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-lg-3 align-items-start flex-column">
-                            <label for="children" class="d-inline-flex col-auto">Children <span class="sublabel"> 2-11
-                                </span></label>
-                            <select class="form-select" id="children">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-lg-3 align-items-start flex-column">
-                            <label for="infants" class="d-inline-flex col-auto">Infants <span class="sublabel"> less than
-                                    2</span></label>
-                            <select class="form-select" id="infants">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-lg-6 align-items-start flex-column">
-                            <label for="cabin" class="d-inline-flex">Cabin</label>
-                            <select class="form-select" id="cabin">
-                                <option value="ECONOMY">Economy</option>
-                                <option value="PREMIUM_ECONOMY">Premium Economy</option>
-                                <option value="BUSINESS">Business</option>
-                                <option value="FIRST">First</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-lg-6 align-items-start flex-column pt-lg-4">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input align-self-center" type="checkbox" id="directFlights">
-                                <label class="form-check-label d-inline-flex align-self-center" for="directFlights">Direct
-                                    flights</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="text-left col-auto">
                             <button type="submit" class="btn btn-primary">Search flights</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="pb-3 h3 text-left">By Events &#128747;</div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md align-items-start flex-column">
+                            <label for="departure-date" class=" d-inline-flex">Event</label>
+                            <div class="select-container">
+                            <select class="event">                                
+                                <option value="">Select an Event</option>
+                                <option value="First">Event1</option>
+                                <option value="Second">Event2</option>
+                                <option value="Third">Event3</option>
+                                <option value="Forth">Event4</option>
+                            </select>
+                            <div class="icon-container">
+                                <i class="fa-solid fa-carat-down"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="text-left col-auto">
+                            <button type="submit" class="btn btn-primary">Search by Events</button>
                         </div>
                     </div>
                 </form>
